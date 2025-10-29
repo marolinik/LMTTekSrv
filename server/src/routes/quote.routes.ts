@@ -46,7 +46,7 @@ router.post('/', authenticate, async (req: AuthRequest, res) => {
         configuration: data.configuration,
         notes: data.notes,
         items: {
-          create: data.items,
+          create: data.items as any,
         },
       },
       include: {

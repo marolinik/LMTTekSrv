@@ -58,7 +58,7 @@ router.post('/', authenticate, requireAdmin, async (req: AuthRequest, res) => {
     const data = componentSchema.parse(req.body);
 
     const component = await prisma.component.create({
-      data,
+      data: data as any,
     });
 
     res.status(201).json({ component });
@@ -79,7 +79,7 @@ router.put('/:id', authenticate, requireAdmin, async (req: AuthRequest, res) => 
 
     const component = await prisma.component.update({
       where: { id },
-      data,
+      data: data as any,
     });
 
     res.json({ component });
