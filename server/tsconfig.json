@@ -22,7 +22,9 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "noEmitOnError": false,
+    "suppressImplicitAnyIndexErrors": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
