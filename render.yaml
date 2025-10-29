@@ -35,7 +35,6 @@ services:
   - type: web
     name: lmtek-frontend
     runtime: static
-    region: frankfurt
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
