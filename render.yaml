@@ -5,7 +5,7 @@ services:
     runtime: node
     region: frankfurt  # EU region for better latency
     plan: starter
-    buildCommand: cd server && npm install && npx prisma generate && npm run build
+    buildCommand: cd server && npm install --production=false && npx prisma generate && npm run build
     startCommand: cd server && npm run start
     envVars:
       - key: NODE_ENV
