@@ -65,5 +65,5 @@ databases:
   - name: lmtek-postgres
     databaseName: lmtek_configurator
     user: lmtek_user
-    plan: starter  # $7/month - 1GB storage, always-on
+    ipAllowList: []  # Allow connections from Render services only
     region: frankfurt
