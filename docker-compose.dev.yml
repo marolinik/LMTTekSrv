@@ -1,0 +1,83 @@
+version: '3.8'
+
+# Development Docker Compose with Hot Reload
+# Usage: docker-compose -f docker-compose.dev.yml up
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    container_name: lmtek-postgres-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: lmtek_configurator
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    networks:
+      - lmtek-dev-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API (Development mode with hot reload)
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    container_name: lmtek-backend-dev
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres123@postgres:5432/lmtek_configurator?schema=public
+      JWT_SECRET: dev-secret-key-change-in-production
+      JWT_EXPIRES_IN: 7d
+      PORT: 3001
+      NODE_ENV: development
+      ALLOWED_ORIGINS: http://localhost:5173,http://localhost:3000
+      ADMIN_EMAIL: admin@lmtek.com
+      ADMIN_PASSWORD: admin123
+      ADMIN_NAME: System Administrator
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+      - /app/dist
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - lmtek-dev-network
+    command: npm run dev
+
+  # Frontend (Development mode with Vite hot reload)
+  frontend:
+    image: node:18-alpine
+    container_name: lmtek-frontend-dev
+    restart: unless-stopped
+    working_dir: /app
+    environment:
+      - VITE_API_URL=http://localhost:3001/api
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - lmtek-dev-network
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+
+volumes:
+  postgres_dev_data:
+    driver: local
+
+networks:
+  lmtek-dev-network:
+    driver: bridge

@@ -1,0 +1,185 @@
+Category;Component;Specification;List price;;
+GPU;Nvidia H200 NVL;Powered by the NVIDIA Hopper architecture, the H200 NVL delivers exceptional performance for AI inference, training, and HPC workloads. It features 141 GB of ultra-fast HBM3e memory with 4.8 TB/s bandwidth, PCIe Gen5 connectivity, and NVLink support for multi-GPU scaling. Designed for enterprise data centers, it offers up to 600 W TDP, MIG partitioning, and full compatibility with NVIDIA AI Enterprise software.;23.166,34;;
+GPU;Nvidia RTX 6000 Blackwell Server Edition;Built on the Blackwell architecture, this server-grade GPU offers 96 GB GDDR7 ECC memory, PCI-Express Gen5 x16 interface, and up to 600 W configurable power draw. With 24,064 CUDA cores, next-gen Tensor & RT cores, and support for Multi-Instance GPU (up to 4 MIGs @ 24 GB), it’s optimized for AI inference, rendering, virtualization / vGPU workflows, and 24/7 data-centre operation. Passively cooled for enterprise systems.;6.880,00;;
+GPU;ZOTAC GAMING GeForce RTX™ 5090;High-performance GPU built on NVIDIA Blackwell architecture with DLSS 4 support. Equipped with 32?GB GDDR7 memory and 21,760 CUDA cores, delivering extreme power for demanding gaming, AI, and professional workloads. Supports 4K+ resolutions and real-time ray tracing. Requires 575?W GPU power, recommended system PSU ?1000?W. Available with air cooling or 360?mm AIO liquid cooling for quieter operation and improved thermal performance.;2.000,00;;
+CPU;AMD EPYC 9355P (32 Cores, 280 W) for 2 GPU;Server-class processor from the AMD EPYC 9004 “Genoa” family, based on the Zen 4 architecture. Features 32 cores / 64 threads, a 3.25 GHz base and up to 3.75 GHz boost clock, with support for 12-channel DDR5 memory and 128 PCIe 5.0 lanes. Ideal for single-socket servers (P-series) requiring strong compute density, efficiency, and scalability for AI, virtualization, and enterprise workloads.;2.093,24;;
+CPU;AMD EPYC 9555P (64 Cores, 360 W) for 4 GPUs;Enterprise-grade CPU from the AMD EPYC 9004 “Genoa” series, built on the advanced Zen 4 architecture. Delivers 64 cores / 128 threads, with a 2.4 GHz base and up to 3.75 GHz boost frequency. Supports 12-channel DDR5 memory and 128 PCIe 5.0 lanes, offering outstanding performance for AI, cloud, and virtualization workloads. Optimized for single-socket (P-series) server configurations.;2.150,00;;
+CPU ;AMD EPYC 9655P (96 Cores, 400 W) for 6 GPUs;"AMD EPYC 9655P, a high-performance processor from AMD's 5th generation EPYC 9005 series, codenamed ""Turin."". This processor is built on AMD's Zen 5 architecture and is designed for single-socket (1P) server configurations, offering exceptional performance for data centers and high-performance computing tasks. Cores/Threads: 96 cores and 192 threads. Base Clock Speed: 2.6 GHz. Max Boost Clock: Up to 4.5 GHz. L3 Cache: 384 MB. Thermal Design Power (TDP): 400W (default), configurable down to 320W. Socket Compatibility: SP5. Memory Support: 12-channel DDR5, up to 6000 MT/s. PCIe Support: PCIe 5.0 with 128 lanes";2.200,00;;
+Memory;Micron 64 GB DDR5 RDIMM server memory;Micron MTC40F2046S1RC64BD2 — 64 GB DDR5 RDIMM high-performance server ECC registered memory module designed for modern server platforms. Supports DDR5-6400 frequencies, uses 1.1 V supply, and configured as dual-rank (2R ×4) RDIMM. Reliable for data-center workloads with error correction and server-optimized design.;264,88;;
+Storage OS;Micron 7450 PRO, 1.92 TB NVMe M.2;Micron 7450 PRO, 1.92 TB NVMe M.2 is high-performance enterprise NVMe SSD (M.2 22110 size), ideal for server/workstation builds. Offers 1.92 TB capacity, PCIe 4.0 x4 interface, and read-intensive workload tuning. Features up to ~5,000 MB/s sequential read and 2,400 MB/s sequential write speeds.;271,33;;
+Storage Data;Micron 9550 Pro, 15.36 TB NVMe U.2;High-performance enterprise SSD with PCIe Gen 5 x4 (NVMe). Ideal for data-center workloads. Capacity: 15.36 TB. Interface: PCIe 5.0 ×4 NVMe, U.2 2.5-inch (15 mm) form factor. Performance: Up to 14,000 MB/s sequential read / 10,000 MB/s sequential write. Endurance: 1 DWPD (Read-Intensive class), approx. 28,032 TBW. Power / thermal: Operating temperature 0 °C to 70 °C. Security & features: Supports end-to-end encryption (256-bit AES, Opal), OCP 2.0/2.5 telemetry features;1.019,10;;
+Motherboard;ASRock Rack TURIND8X-2T/500W;Enterprise-class SP5 motherboard (SSI-EEB), designed for one AMD EPYC 9005/9004 socket (97×4 series), up to 500 W TDP. Offers 8 × DDR5 DIMM slots (supports RDIMM / 3DS-RDIMM), multiple PCIe 5.0 / CXL2.0 x16 expansion slots, dual 10 GbE LAN, and IPMI remote management. Ideal for high-performance server builds with heavy I/O and multi-GPU or accelerator setups.;1.290,00;;
+Network;NVIDIA ConnectX-7 HEAT;"High-performance dual-port network adapter designed for data centers and enterprise environments. Features: Dual 200Gb QSFP112 Ports: Supports both Ethernet and InfiniBand protocols, offering flexible connectivity options. PCIe 5.0 x16 Interface: Ensures high bandwidth and low latency for demanding applications. Form Factor: Half-Height, Half-Length (HHHL) for compatibility with a wide range of servers.Security Features: Secure Boot enabled; cryptographic functions disabled. Cooling: Equipped with a heatsink for efficient thermal management. Ideal for high-throughput workloads such as AI, HPC, and cloud applications.";1.326,23;;
+Chases;LM TEK - RM 4U8G Chassis;"LM TEK - RM 4U8G Chassis - ultimate Space Savings. Achieves 8x GPU capacity in a true 4U chassis, significantly reducing your
+data center footprint and lowering operational costs compared to standard 5U+ air-cooled solutions.";992,40;;
+Power supply;Power Supply unit; Power supply unit GW-CROS2000C3 Titanium ;238,90;;
+Cooling unit;Cooling unit kit 1;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";3.498,16;;
+Cooling unit;Cooling unit kit 2;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";3.933,74;;
+Cooling unit;Cooling unit kit 3;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";4.362,93;;
+Cooling unit;Cooling unit kit 4;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";4.792,00;;
+Cooling unit;Cooling unit kit 5;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";5.227,00;;
+Cooling unit;Cooling unit kit 6;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";5.663,00;;
+Cooling unit;Cooling unit kit 7;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";6.092,00;;
+Cooling unit;Cooling unit kit 8;"EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories
+The EK-Pro Cooling Unit Kit is a high-performance, all-in-one solution designed for advanced custom liquid cooling setups, supporting dual CPUs and up to eight GPUs. This comprehensive kit includes premium components to ensure maximum thermal efficiency, reliability, and ease of installation, now enhanced with LM TEK RM 4U8G power management and fan distribution accessories.
+Key Components:
+•	EK-Pro Radiator Triple P360 – High-capacity radiator for superior heat dissipation.
+•	Delta Fan PFB1212SE-00 – High-static-pressure fans optimized for radiator airflow.
+•	M4x45 DIN7984 Screws – Precision mounting hardware for fans and radiator.
+•	EK-Pro Pump Reservoir Dual D5 with By-pass – Powerful and silent pump with integrated reservoir and bypass for flexible loop design.
+•	EK-Pro Manifold 2CPU 8GPU - Acetal – Advanced distribution manifold for dual CPU and multi-GPU setups.
+•	EK-Loop Smart Control & Connect Temperature Plug Sensor – Intelligent monitoring and control for loop temperatures and flow.
+•	EK-Pro G1/4 Barb Fittings & Hose Clamps – Nickel-plated fittings with secure 17mm OD clamps for leak-free connections.
+•	EK-PLUG G1/4 & EK-Quantum Torque Rotary 90° / Extender Static MF 28 – Versatile plug and rotary/extender fittings for complex routing.
+•	CPC QDC Quick Disconnects (PLQ4D47004BLU / PLQ4D17006BLU) – Tool-free connection for fast maintenance and modularity.
+•	EK-Loop ZMT Soft Tube 10/16mm, 1m – Black – Premium, flexible tubing for reliable flow and easy routing.
+•	EK-CryoFuel Clear (Premix 1000mL) – High-performance coolant for long-lasting corrosion protection and optimal heat transfer.
+•	EK-Pro CPU WB SP5 Ni + Acetal & EK-PRO GPU WB H200 NVL – Precision-engineered water blocks for superior CPU and GPU cooling.
+LM TEK RM 4U8G Accessories:
+•	LM TEK RM 4U8G Power Cables – Optimized power distribution for high-density GPU setups.
+•	LM TEK Fan Splitter RM 4U8G 200 / 300 / 400 – Flexible fan distribution for precise airflow management across the chassis.
+•	RM 4U8G PDB - 7000400 GW CRPS2000W – High-capacity power distribution board for reliable operation of multiple GPUs and system components.
+Description:
+This kit delivers a complete liquid cooling solution for high-performance workstations or gaming systems. Engineered with precision, it ensures optimal thermal management for multi-GPU and dual-CPU configurations. The inclusion of LM TEK RM 4U8G power and fan management accessories further enhances system reliability, modularity, and ease of maintenance. Every component is designed for efficiency, quiet operation, and durability, making this kit ideal for enthusiasts and professionals seeking ultimate cooling performance and power management in a high-density system.";6.521,00;;
+R&D;Research & Development;The EK-Pro Cooling Unit Kit with LM TEK RM 4U8G Accessories was developed to enable advanced research and development in high-density computing environments. Its combination of precision water blocks, high-capacity radiators, and intelligent fan and power management allows for optimal thermal performance and reliable operation of dual-CPU, multi-GPU systems. This integrated solution supports rapid prototyping and testing while ensuring modularity, efficiency, and long-term durability.;1.000,00;;
+Assembly ;Server Assembly;Assembly of the server performed by the distributor;1.000,00;;

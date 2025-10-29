@@ -1,0 +1,70 @@
+services:
+  # Backend API Service
+  - type: web
+    name: lmtek-backend
+    runtime: node
+    region: frankfurt  # EU region for better latency
+    plan: starter
+    buildCommand: cd server && npm install && npx prisma generate && npm run build
+    startCommand: cd server && npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: DATABASE_URL
+        fromDatabase:
+          name: lmtek-postgres
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: ALLOWED_ORIGINS
+        sync: false  # Set manually in Render Dashboard after getting frontend URL
+      - key: ADMIN_EMAIL
+        sync: false  # Set manually: admin@lmtek.com
+      - key: ADMIN_PASSWORD
+        sync: false  # Set manually: USE STRONG PASSWORD
+      - key: ADMIN_NAME
+        value: System Administrator
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+  # Frontend Static Site
+  - type: web
+    name: lmtek-frontend
+    runtime: static
+    region: frankfurt
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false  # Set manually after backend deploys: https://lmtek-backend.onrender.com/api
+      - key: VITE_GEMINI_API_KEY
+        sync: false  # Optional: Set if using AI features
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-XSS-Protection
+        value: 1; mode=block
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true
+
+databases:
+  - name: lmtek-postgres
+    databaseName: lmtek_configurator
+    user: lmtek_user
+    plan: starter  # $7/month - 1GB storage, always-on
+    region: frankfurt

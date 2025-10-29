@@ -1,0 +1,113 @@
+// Prisma schema for LM TEK Configurator
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  password  String   // hashed with bcrypt
+  phone     String?
+  company   String?
+  role      Role     @default(CLIENT)
+  quotes    Quote[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([email])
+}
+
+enum Role {
+  CLIENT
+  ADMIN
+}
+
+model Component {
+  id          String            @id @default(uuid())
+  category    ComponentCategory
+  name        String
+  spec        String
+  listPrice   Float
+  metadata    Json?             // Flexible JSON for capacity, cores, psuCount, gpuSupport, etc.
+  quoteItems  QuoteItem[]
+  isActive    Boolean           @default(true)
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@index([category, isActive])
+}
+
+enum ComponentCategory {
+  GPU
+  CPU
+  RAM
+  STORAGE
+  POWER
+  NETWORK
+  MOTHERBOARD
+  COOLING
+  CHASSIS
+  RND
+  ASSEMBLY
+}
+
+model Quote {
+  id              String      @id @default(uuid())
+  quoteNumber     String      @unique
+  userId          String
+  user            User        @relation(fields: [userId], references: [id])
+  status          QuoteStatus @default(PENDING)
+
+  // Configuration snapshot
+  totalPrice      Float
+  configuration   Json        // Full configuration object as JSON
+  items           QuoteItem[]
+
+  // Notes and metadata
+  notes           String?
+  adminNotes      String?
+
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([userId])
+  @@index([quoteNumber])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum QuoteStatus {
+  PENDING
+  REVIEWED
+  APPROVED
+  REJECTED
+  COMPLETED
+}
+
+model QuoteItem {
+  id          String     @id @default(uuid())
+  quoteId     String
+  quote       Quote      @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+
+  componentId String?
+  component   Component? @relation(fields: [componentId], references: [id])
+
+  // Snapshot of component at time of quote
+  category    String
+  name        String
+  spec        String
+  quantity    Int        @default(1)
+  unitPrice   Float
+  totalPrice  Float
+
+  createdAt   DateTime   @default(now())
+
+  @@index([quoteId])
+}
